@@ -23,7 +23,7 @@ body{
 	background: transparent;
 }
 .box-container{
-	width:748px;
+	width:758px;
 	margin: 8px auto -350px auto;
 	border: 0;
 	padding: 0 0 350px 0;
@@ -31,7 +31,7 @@ body{
 	background: transparent;
 }
 .box-title{
-	width: 748px;
+	width: 758px;
 	margin: 8px 0 0 0;
 	border: 0;
 	padding: 0;
@@ -40,7 +40,7 @@ body{
 	border-radius: 10px 10px 0 0;
 }
 .box-content{
-	width: 748px;
+	width: 758px;
 	margin: 8px auto 0 auto;
 	background: transparent;
 }

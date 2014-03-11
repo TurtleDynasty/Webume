@@ -3,7 +3,7 @@ html{
 	border: 0;
 	padding: 0;
 	background-color: #3A5A9A;
-	background-image: url("turtle_blur.png");
+	background-image: url("turtle_blur_2.jpg");
 	background-position: center top;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -16,7 +16,7 @@ body{
 	vertical-align: middle;
 }
 #page-container{
-	margin: 350px auto 0 auto;
+	margin: 250px auto 0 auto;
 	border: 0;
 	padding: 0;
 
@@ -76,14 +76,14 @@ p.cell{
 	padding-left: 4em;
 }
 .black{
-	background: linear-gradient(to bottom, rgba(16,16,16,1) 0%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%);
 }
 .pink{
-	background: linear-gradient(to bottom, rgba(244,48,199,1) 0%,rgba(225,45,185,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,51,204,1) 0%,rgba(204,0,153,1) 100%);
 }
 .cyan{
-	background: linear-gradient(to bottom, rgba(35,205,239,1) 0%,rgba(32,186,216,1) 100%);
+	background: linear-gradient(to bottom, rgba(51,204,255,1) 0%,rgba(0,153,204,1) 100%);
 }
 .green{
-	background: linear-gradient(to bottom, rgba(8,219,36,1) 0%,rgba(0,200,35,1) 100%);
+	background: linear-gradient(to bottom, rgba(77,229,102,1) 0%,rgba(26,178,51,1) 100%);
 }

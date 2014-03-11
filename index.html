@@ -15,6 +15,18 @@ jQuery(document).ready(function() {
  		jQuery(this).next(".box-content").slideToggle(200);
 	});
 });
+
+jQuery(document).ready(function() {
+ 	//toggle the content box on click of title
+	jQuery(".box-title").click(function()
+	{
+ 		jQuery(this).next(".box-content-open").slideToggle(200);
+	});
+});
+
+
+
+
 </script>
 <body>
 <div id="page-container">
@@ -28,7 +40,7 @@ jQuery(document).ready(function() {
 			<h1>My R&eacutesum&eacute</h1>
 		</div>
 
-		<div class="box-content">
+		<div class="box-content-open">
 <!--***********************-->
 <!--SECTION 1.1 - EDUCATION-->
 <!--***********************-->
@@ -36,7 +48,7 @@ jQuery(document).ready(function() {
 				<div class="box-title pink">
 					<h1>Education</h1>
 				</div>
-				<div class="box-content">
+				<div class="box-content-open">
 					<p><b>Bachelor of Science in Computer Science</b><span class="pull-right">Current</span><br>
 					Minor: Mathematics, Electrical Engineering<br>
 					Northern Arizona University, Flagstaff, AZ<br>
@@ -55,12 +67,12 @@ jQuery(document).ready(function() {
 				<div class="box-title cyan">
 					<h1>Work Experience</h1>
 				</div>
-				<div class="box-content">
+				<div class="box-content-open">
 					<p>
 					<i>Northern Arizona University, Flagstaff, AZ</i><br>
 					<b>Committee Member,</b> NAU Green Fund<span class="pull-right">Current</span><br>
 					<span class="tab-right">Reducing campus environmental impact through sponsorship of student projects.</span><br>
-					<span class="tab-right">Enhancing student participation through subcommittee.</span><br>
+					<span class="tab-right">Enhancing student participation through subcommittee guidance.</span><br>
 					<br>
 					<b>Peer Math Assistant,</b> North Student Learning Centers<span class="pull-right">Spring 2013</span><br>
 					<span class="tab-right">Reinforced key concepts from lecture.</span><br>

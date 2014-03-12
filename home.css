@@ -5,6 +5,7 @@ html{
 	background-color: #3A5A9A;
 	background-image: url("turtle_blur_2.jpg");
 	background-position: center top;
+	background-size: cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 }

@@ -13,13 +13,28 @@ body{
 	border: 0;
 	padding: 0;
 	background: transparent;
-	vertical-align: middle;
+	vertical-align: center;
+}
+title{
+	font-family:"Proxima Nova", "Helvetica", "Arial", sans-serif;
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto 20px auto;
+	display: block;
+}
+#title-container{
+	margin: 25px 0 0 0;
+	border: 0;
+	padding: 0; 
+	display: block;
 }
 #page-container{
-	margin: 250px auto 0 auto;
+	margin: 150px auto 0 auto;
 	border: 0;
 	padding: 0;
-
+	display: block;
 	background: transparent;
 }
 .box-container{

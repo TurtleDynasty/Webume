@@ -3,7 +3,7 @@ html{
 	border: 0;
 	padding: 0;
 	background-color: #3A5A9A;
-	background-image: url("turtle_blur_2.jpg");
+	background-image: url("images/turtle_blur_2.jpg");
 	background-position: center top;
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -60,12 +60,16 @@ title{
 	margin: 8px auto 0 auto;
 	background: transparent;
 }
+
 table{
+	width: 100%;
 	margin: 0 0 8px 0;
 	padding: 8px;
 	border: 0;
+	font-family: Helvetica, sans-serif;
 	background-color: white;
 }
+
 h1{
 	font-family: Helvetica, sans-serif;
 	font-size: 2em;

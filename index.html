@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David's Resume</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="alternate stylesheet" type="text/css" href="css/bootstrap-theme.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 </head>
 
@@ -26,327 +30,178 @@ jQuery(document).ready(function() {
 });
 </script>
 
+<body role="document">
+	<div class="container">
 
-<body>
-<div id="title-container">
-	<title>David's Resume &amp Personal Website</title>
-		<div style="text-align:center">
-			<a href="http://www.linkedin.com/pub/david-miller/7b/b35/213/"><img src="images/linkedin.png" width="60px"></img></a>
-			<a href="https://twitter.com/TurtleDynasty"><img src="images/twitter.png" width="60px"></img></a>
-			<a href="http://www.turtledynasty.blogspot.com"><img src="images/blogspot.png" width="60px"></img></a>
-			<a href="https://plus.google.com/+DavidMiller2048/posts"><img src="images/googleplus.png" width="60px"></img></a>
-			<a href="mailto:David-Miller@nau.edu"><img src="images/gmail.png" width="60px"></img></a>
-			<a href="https://github.com/TurtleDynasty"><img src="images/github.png" width="60px"></img></a>
-		</div>
-	
+		<!-- NAVBAR HEADER -->
+		<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      		<div class="container">
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+         			 </button>
+          			<a class="navbar-brand" href="#">Turtle Dynasty</a>
+        		</div>
+        		<div class="collapse navbar-collapse">
+          			<ul class="nav navbar-nav">
+            			<li class="active"><a href="#">R&eacutesum&eacute</a></li>
+            			<li><a href="#about">Projects</a></li>
+            			<li><a href="#about">Recreation</a></li>
+            			<li><a href="#contact">Contact</a></li>
+          			</ul>
+        		</div><!--/.nav-collapse -->
+      		</div>
+    	</div>
+        <!-- END NAVBAR HEADER -->
 
-</div>
-<div id="page-container">
+        <!-- JUMBOTRON -->
+      	<div class="jumbotron">
+        	<img style="float:left" src="images/me.png" class="img-thumbnail" alt="A picture of me.">
+        	<div style="margin-left: 45px; float:left;">
+        		<h1>David Miller</h1>
+        		<p>Computer Scientist, web developer, and pizza lover.</p> This website in under construction. Come back later! Or check out <a href="old.html">the old page.</a>
+        	</div>
+        	<div style="clear:both"></div>
+      	</div>
+      	<!-- END JUMBOTRON -->
 
-<!--******************-->
-<!--SECTION 1 - RESUME-->
-<!--******************-->
-	<div class="box-container">
-		<div class="box-title black">
-			<h1>My R&eacutesum&eacute</h1>
-		</div>
-
-		<div class="box-content-open">
-<!--***********************-->
-<!--SECTION 1.1 - EDUCATION-->
-<!--***********************-->
-			<div class="box-container">
-				<div class="box-title pink">
-					<h1>Education</h1>
+      	<!-- INNER BODY PANELS -->
+      	<div class="row">
+      		<!-- LEFT COLUMN -->
+			<div class="col-sm-6">
+				<!-- EDUCATION -->
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Education</h3>
+					</div>
+					<div class="panel-body">
+						<p>
+							<strong>Bachelor of Science in Computer Science</strong>
+							<span class="pull-right">In Progress</span><br>
+							Northern Arizona University, Flagstaff, AZ<br>
+							Current GPA: 3.22<br>
+							<br>
+							<strong>Relevant topics studied:</strong><br>
+							<span class="tab-right">Calculus, Physics, Discrete Math, Data Structures, Graphics, Ethics, Web Programming.</span><br>
+							<br>
+							<strong>Languages and tools known:</strong><br>
+							<span class="tab-right">HTML5, CSS3, Python, Git, Heroku, Flask, Javascript, Bootstrap, jQuery</span><br>
+							<span class="tab-right">C/C++, Java, Prolog, PHP, MySQL, State Machines, UML, Scheme, Rails</span><br>
+						</p>
+					</div>
 				</div>
-				<div class="box-content-open">
-					<p><b>Bachelor of Science in Computer Science</b><span class="pull-right">In Progress</span><br>
-					Minor: Mathematics, Electrical Engineering<br>
-					Northern Arizona University, Flagstaff, AZ<br>
-					Current GPA: 3.22<br>
-					<br>
-					<b>Relevant topics studied:</b><br>
-					<span class="tab-right">Calculus, Physics, Discrete Math, Data Structures, CS Graphics, CS Ethics, Web Programming.</span><br>
-					<br>
-					<b>Languages and tools known:</b><br>
-					<span class="tab-right">HTML5, CSS3, Python, Git, Heroku, Flask, Javascript, Bootstrap, jQuery</span><br>
-					<span class="tab-right">C/C++, Java, Prolog, PHP, MySQL, State Machines, UML, Scheme, Rails</span><br>
-					<span class="tab-right" style="font-family: monospace">&nbsp &lt - Very familiar - - - - - - - - - Still learning - &gt</span>
-</p>
-	
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Panel title</h3>
+					</div>
+					<div class="panel-body">
+						Panel content
+					</div>
 				</div>
 			</div>
-<!--*****************************-->
-<!--SECTION 1.2 - WORK EXPERIENCE-->
-<!--*****************************-->
-			<div class="box-container">
-				<div class="box-title cyan">
-					<h1>Work Experience</h1>
-				</div>
-				<div class="box-content-open">
-					<p>
-					<b>Committee Member,</b> NAU Green Fund, Flagstaff, AZ<span class="pull-right">Current</span><br>
-					<span class="tab-right">Reducing campus environmental impact through sponsorship of student projects.</span><br>
-					<span class="tab-right">Enhancing student participation through subcommittee guidance.</span><br>
-					<br>
+			<!-- RIGHT COLUMN -->
+			<div class="col-sm-6">
+				<!-- WORK EXPERIENCE -->
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Work Experience</h3>
+					</div>
+					<div class="panel-body">
+						<p>
+							<strong>Committee Member,</strong> NAU Green Fund, Flagstaff, AZ
+							<span class="pull-right">Current</span><br>
+							<span class="tab-right">Reducing campus environmental impact through sponsorship of student projects.</span><br>
+							<span class="tab-right">Enhancing student participation through subcommittee guidance.</span><br>
+							<br>
 
-					<b>Peer Math Assistant,</b> North Student Learning Centers, NAU, Flagstaff, AZ<span class="pull-right">Spring 2013</span><br>
-					<span class="tab-right">Reinforced key concepts from lecture.</span><br>
-					<span class="tab-right">Guided students in example exercises.</span><br>
-					<span class="tab-right">Identified topics for focused study.</span><br>
-					</p>
+							<strong>Peer Math Assistant,</strong> North Student Learning Centers, NAU, Flagstaff, AZ
+							<span class="pull-right">Spring 2013</span><br>
+							<span class="tab-right">Reinforced key concepts from lecture.</span><br>
+							<span class="tab-right">Guided students in example exercises.</span><br>
+							<span class="tab-right">Identified topics for focused study.</span><br>
+						</p>
 
-					<p>
-					<b>Science & Astronomy Instructor,</b> Girl Scouts of the USA, Camp Maripai, Payson, AZ<span class="pull-right">Summer 2013</span><br>
-					<span class="tab-right">Prepared daily demonstrations and interactive projects.</span><br>
-					<span class="tab-right">Initiated girl-led discussions about personal discoveries.</span><br>
-					<span class="tab-right">Taught girls to recognize key summer constellations.</span><br>
-					<br>
+						<p>
+							<strong>Science & Astronomy Instructor,</strong> Girl Scouts of the USA, Camp Maripai, Payson, AZ
+							<span class="pull-right">Summer 2013</span><br>
+							<span class="tab-right">Prepared daily demonstrations and interactive projects.</span><br>
+							<span class="tab-right">Initiated girl-led discussions about personal discoveries.</span><br>
+							<span class="tab-right">Taught girls to recognize key summer constellations.</span><br>
+							<br>
 
-					<b>Archery Instructor,</b> Girl Scouts of the USA, Camp Shadow Rim, Payson, AZ<span class="pull-right">Summer 2012</span><br>
-					<span class="tab-right">Maintained a safe archery environment.</span><br>
-					<span class="tab-right">Provided encouragement and technique coaching.</span><br>
-					<span class="tab-right">Improvised creative diversions to improve behavior.</span><br>
+							<strong>Archery Instructor,</strong> Girl Scouts of the USA, Camp Shadow Rim, Payson, AZ
+							<span class="pull-right">Summer 2012</span><br>
+							<span class="tab-right">Maintained a safe archery environment.</span><br>
+							<span class="tab-right">Provided encouragement and technique coaching.</span><br>
+							<span class="tab-right">Improvised creative diversions to improve behavior.</span><br>
 					
-					</p>
+						</p>
+					</div>
 				</div>
-			</div>
-<!--**********************************-->
-<!--SECTION 1.3 - VOLUNTEER EXPERIENCE-->
-<!--**********************************-->
-			<div class="box-container">
-				<div class="box-title green">
-					<h1>Volunteer Experience</h1>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Volunteer Experience</h3>
+					</div>
+					<div class="panel-body">
+						<p>
+							<strong> Service Project Leader, </strong>
+							NAU ACM Club, Flagstaff, AZ
+							<span class="pull-right"> Fall 2013-present </span> <br>
+							<span class="tab-right"> Coordinating weekend service projects. </span><br> 
+							<span class="tab-right"> Recording accomplishments of participants.</span> <br> 
+							<span class="tab-right"> Implementing waste management and disposal plan. </span> 
+						</p>
+
+						<p>
+							<strong> Conference Volunteer,</strong> 
+							IAA Planetary Defense Conference 
+							<span class="pull-right"> Spring 2013</span><br>
+							<span class="tab-right"> Planned and executed check-in procedures. </span><br> 
+							<span class="tab-right"> Assembled welcome packages.</span><br> 
+							<span class="tab-right"> Greeted scientific guests from around the world.</span><br> 
+							<span class="tab-right"> Attended conference lectures and engaged in public discussions.</span><br> 
+						</p>
+
+						<p>
+							<strong> Software Co-author,</strong> 
+							Institute of Electrical and Electronics Engineers Club, NAU, Flagstaff, AZ 
+							<span class="pull-right"> April 2012 </span><br>
+							<span class="tab-right"> Attended regular meetings for project design.</span><br> 
+							<span class="tab-right"> Engineered UI using Arduino technology based on provided specifications.</span><br> 
+							<span class="tab-right"> Tested software for quality and stability. </span>
+						</p>
+
+						<p>
+							<strong>Eagle Scout Project Leader,</strong> 
+							Flagstaff Renewal Center 
+							<span class="pull-right">October 2009</span><br>
+							<span class="tab-right"> Managed a team of 22 people in restoring exterior paint and landscaping.</span><br>
+							<span class="tab-right"> Over 150 person-hours were logged.<br></span>
+							<span class="tab-right"> Improved safety of existing winterized infrastructure.</span>
+						</p>
+
+						<p>
+							<strong>Service per graduation requirement,</strong> 
+							Notre Dame Preparatory High School, Scottsdale, AZ 
+							<span class="pull-right"> 2007-11 </span><br>
+							<span class="tab-right"> 200+ hours of community service logged</span>
+						</p>
+					</div>
 				</div>
-				<div class="box-content">
-					<p>
-					<b> Service Project Leader, </b>NAU ACM Club, Flagstaff, AZ<span class="pull-right"> Fall 2013-present </span> <br>
-					<span class="tab-right"> Coordinating weekend service projects. </span><br> 
-					<span class="tab-right"> Recording accomplishments of participants.</span> <br> 
-					<span class="tab-right"> Implementing waste management and disposal plan. </span> 
-					</p>
+			</div><!-- /.col-sm-4 -->
 
-					<p>
-					<b> Conference Volunteer,</b> IAA Planetary Defense Conference <span class="pull-right"> Spring 2013</span><br>
-					<span class="tab-right"> Planned and executed check-in procedures. </span><br> 
-					<span class="tab-right"> Assembled welcome packages.</span><br> 
-					<span class="tab-right"> Greeted scientific guests from around the world.</span><br> 
-					<span class="tab-right"> Attended conference lectures and engaged in public discussions.</span><br> 
-					</p>
-
-					<p>
-					<b> Software Co-author,</b> Institute of Electrical and Electronics Engineers Club, NAU, Flagstaff, AZ <span class="pull-right"> April 2012 </span><br>
-					<span class="tab-right"> Attended regular meetings for project design.</span><br> 
-					<span class="tab-right"> Engineered UI using Arduino technology based on provided specifications.</span><br> 
-					<span class="tab-right"> Tested software for quality and stability. </span>
-					</p>
-
-					<p>
-					<b>Eagle Scout Project Leader,</b> Flagstaff Renewal Center <span class="pull-right">October 2009</span><br>
-					<span class="tab-right"> Managed a team of 22 people in restoring exterior paint and landscaping.</span><br>
-					<span class="tab-right"> Over 150 person-hours were logged.<br></span>
-					<span class="tab-right"> Improved safety of existing winterized infrastructure.</span>
-					</p>
-
-					<p>
-					<b>Service per graduation requirement,</b> Notre Dame Preparatory High School, Scottsdale, AZ <span class="pull-right"> 2007-11 </span><br>
-					<span class="tab-right"> 200+ hours of community service logged</span>
-					</p>
-				</div>
-			</div>
 		</div>
+      	<!-- END INNER BODY PANELS -->
+
+
 	</div>
-
-
-<!--**********************-->
-<!--SECTION 2 - SPARE TIME -->
-<!--**********************-->
-	<div class="box-container">
-		<div class="box-title black">
-			<h1>My Spare Time</h1>
-		</div>
-
-		<div class="box-content">
-<!--********************-->
-<!--SECTION 2.1 - MUSIC -->
-<!--********************-->
-			<div class="box-container">
-				<div class="box-title cyan">
-					<h1>Music</h1>
-				</div>
-				<div class="box-content">
-					<p><iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3801216682/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://davidstarr.bandcamp.com/album/no-ctrl">NO + Ctrl by David Starr</a></iframe>
-					</p>
-					<p><iframe class="imgur-album" width="100%" height="300" frameborder="0" src="http://imgur.com/a/4b8c7/embed"></iframe></p>
-	
-				</div>
-			</div>
-<!--**********************-->
-<!--SECTION 2.2 - READING -->
-<!--**********************-->
-			<div class="box-container">
-				<div class="box-title green">
-					<h1>Reading</h1>
-				</div>
-				<div class="box-content">
-					<table>
-						<tr>
-							<td>
-								<a href="http://www.thegreatcourses.com/tgc/courses/course_detail.aspx?cid=9344"><img src="images/deceptive.png" ></img></a>
-							</td>
-							<td>
-								<p class="cell">
-								Your Deceptive Mind: A Scientific Guide to Critical Thinking Skills<br>by Steven Novella<br><br>The famous skeptic and neuroscientist lectures about the nature of the human mind and how we can understand ourselves better. Novella teaches how to think more critically, debunking fraudulent pseudoscience and mythology along the way.
-								</p>
-							</td>
-						</tr>
-					</table>
-
-					<table>
-						<tr>
-							<td>
-								<a href="http://www.wolframscience.com/"><img src="images/new_kind_of_science.png" ></img></a>
-							</td>
-							<td>
-								<p class="cell">
-								A New Kind of Science<br>by Stephen Wolfram<br><br>The man and mind behind the popular WolframAlpha.com summarizes decades of research in the field of cellular automata. A thourough read, prefaced by autobiographical boasting. I can't say I wouldn't boast if I invented Mathematica!
-								</p>
-							</td>
-						</tr>
-					</table>
-
-					<table>
-						<tr>
-							<td>
-								<a href="http://books.google.com/books/about/The_Book_of_Numbers.html?id=0--3rcO7dMYC"><img src="images/book_of_numbers.png" ></img></a>
-							</td>
-							<td>
-								<p class="cell">
-								The Book of Numbers<br>by John H. Conway and Richard K. Guy<br><br>The foremost experts in the field of Number Theory explore popular topics accompanied by colorful diagrams and entertaining historical anecdotes.
-								</p>
-							</td>
-						</tr>
-					</table>
-
-					<table style="margin-bottom: 0px">
-						<tr>
-							<td>
-								<a href="http://books.google.com/books/about/The_Laws_of_Simplicity.html?id=sYpWmwEACAAJ"><img src="images/laws_of_simplicity.png" ></img></a>
-							</td>
-							<td>
-								<p class="cell">
-								The Laws of Simplicity<br>by John Maeda<br><br>MIT Media Lab professor describes the principles of keeping design, business, and life simple.
-								</p>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		
-
-<!--********************-->
-<!--SECTION 2.3 - FUN -->
-<!--********************-->
-			<div class="box-container">
-				<div class="box-title cyan">
-					<h1>Just for Fun</h1>
-				</div>
-				<div class="box-content">
-
-					<table>
-						<tr>
-							<td>
-								<a href="http://factualturtle.herokuapp.com/"><img src="images/factual.jpg" width="120px"></img></a>
-							</td>
-							<td>
-								<p class="cell">
-								I recently attended the 2014 <a href="http://www.lahacks.com/">LA Hacks</a> competition. My team's project was a Twitter bot <a href="http://factualturtle.herokuapp.com/">webapp</a> that sends you tweets about turtles in the style of <a href="https://twitter.com/RealCarrotFacts">@RealCarrotFacts</a> and <a href="https://twitter.com/ProBirdRights">@ProBirdRights</a>. It's purely a novelty program, but we are very proud of the outcome.
-								</p>
-							</td>
-						</tr>
-					</table>
-
-					<table style="margin-bottom: 0px">
-						<tr>
-							<td>
-								<a href="images/lego.jpg"><img src="images/lego.jpg" width="120px"></img></a>
-							</td>
-							<td>
-								<p class="cell">
-								NAU's Aspen Crossing hosts a team creativity competition called &quotLe'go my Lego.&quot My team was awarded first prize in 2012 and 2013. The next competition is this Spring. Wish me luck!
-								</p>
-							</td>
-						</tr>
-					</table>
-	
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
-
-
-<!--**********************-->
-<!--SECTION 3 - CONNECT -->
-<!--**********************-->
-	<div class="box-container">
-		<div class="box-title black">
-			<h1>Connect With Me</h1>
-		</div>
-
-		<div class="box-content"> 
-			<a href="http://www.linkedin.com/pub/david-miller/7b/b35/213/"><img src="images/linkedin.png" width="120px"></img></a>
-			<a href="https://twitter.com/TurtleDynasty"><img src="images/twitter.png" width="120px"></img></a>
-			<a href="http://www.turtledynasty.blogspot.com"><img src="images/blogspot.png" width="120px"></img></a>
-			<a href="https://plus.google.com/+DavidMiller2048/posts"><img src="images/googleplus.png" width="120px"></img></a>
-			<a href="mailto:David-Miller@nau.edu"><img src="images/gmail.png" width="120px"></img></a>
-			<a href="https://github.com/TurtleDynasty"><img src="images/github.png" width="120px"></img></a>
-			<br>
-			<iframe src="http://www.google.com/calendar/embed?src=dm667%40nau.edu&ctz=America/Phoenix" style="border: 0" width="748" height="600" frameborder="0" scrolling="no"></iframe>
-		</div>
-	</div>
-
-
-<!--**********************-->
-<!--SECTION 4 - REFERENCES -->
-<!--**********************-->
-	<div class="box-container">
-		<div class="box-title black">
-			<h1>References</h1>
-		</div>
-
-		<div class="box-content-open"> 
-			
-				<table>
-					<tr>
-						<td><p> Contact </p></td>
-						<td><p>Relationship </p></td>
-					</tr>
-					<tr>
-						<td> <p>Maggie Vanderberg <br>
-						Maggie.Vanderberg@nau.edu </p></td>
-						<td><p> Professor<br> &nbsp </p></td>
-					</tr>
-					<tr>
-						<td><p> Ryan Middleton <br>
-						ryanmid@gmail.com </p></td>
-						<td> <p>Mentor, Former Professor <br> &nbsp </p></td>
-					</tr>
-					<tr>
-						<td> <p>Evin Deschamps <br>
-						Evin.Deschamps@nau.edu </p></td>
-						<td> <p>Former Supervisor, N. Student Learning Centers <br> &nbsp </p></td>
-					</tr>
-
-				</table>
-			
-		</div>
-	</div>
-
-
-</div>
-<div style="height:100%"><br></div>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

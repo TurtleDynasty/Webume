@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<title>Turtle Randomizer</title>
+	<script type='text/javascript'>
+		//manipulates the scale elements of the turtle
+		function randomize(){
+			//get the turtle (is this accessing the DOM?)
+			var theXML = document.getElementById('turtle').contentDocument;
+			//the id of a targeted element
+			var scaleID = '';
+			for( var i = 1; i <= 22; i ++){
+				scaleID = 'scale';
+				scaleID += i; //build the id
+				//manipulate the element by id
+				theXML.getElementById(scaleID).style.fill = random_color();
+			}						
+		}
+		//returns a random color in the format #xxxxxx
+		function random_color(){
+			//possible digits
+			var enumeration = '0123456789ABCDEF';
+			var color = '#'; //start building the color string
+			for(var i = 0; i < 6; i ++){
+				//random value from the set defined in enumeration
+				color += enumeration[Math.round(Math.random() * 15)];
+			}
+			return color;
+		}
+	</script>
+	<body>
+		<div style="text-align: center; padding-top: 100px; margin-left: -100px;">
+		<div style="width: 205px; display:inline; ">
+			<object data='vurtle2.svg' type='image/svg+xml' style='margin-left: 25px;' id='turtle'></object>
+			<div style='text-align: center;'>
+				<button onclick='randomize()'>Get Turtled</button>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

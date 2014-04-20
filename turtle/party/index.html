@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<title>Turtle Randomizer</title>
+	<script type='text/javascript'>
+		function animate_turtle(){
+			setInterval(function(){randomize()}, 50);
+		}
+		function randomize(){
+			var theXML = document.getElementById('turtle').contentDocument;
+			var scaleID = '';
+			for( var i = 1; i <= 22; i ++){
+				scaleID = 'scale';
+				scaleID += i;
+				theXML.getElementById(scaleID).style.fill = random_color();
+			}						
+		}
+		function random_color(){
+			var enumeration = '0123456789ABCDEF'.split('');
+			var color = '#';
+			for(var i = 0; i < 6; i ++){
+				color += enumeration[Math.round(Math.random() * 15)];
+			}
+			return color;
+		}
+	</script>
+	<body>
+		<div style="text-align: center; padding-top: 100px; margin-left: -100px;">
+		<div style="width: 205px; display:inline; ">
+			<object data='vurtle3.svg' type='image/svg+xml' style='margin-left: 25px;' id='turtle'></object>
+			<div style='text-align: center;'>
+				<button onclick='animate_turtle()'>Get Turtled</button>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

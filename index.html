@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 </head>
 
@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 
 <body>
 <div id="title-container">
-	<title>David Miller's Resume and Personal Website</title>
+	<title>David's Resume &amp Personal Website</title>
 		<div style="text-align:center">
 			<a href="http://www.linkedin.com/pub/david-miller/7b/b35/213/"><img src="images/linkedin.png" width="60px"></img></a>
 			<a href="https://twitter.com/TurtleDynasty"><img src="images/twitter.png" width="60px"></img></a>
@@ -60,13 +60,18 @@ jQuery(document).ready(function() {
 					<h1>Education</h1>
 				</div>
 				<div class="box-content-open">
-					<p><b>Bachelor of Science in Computer Science</b><span class="pull-right">Current</span><br>
+					<p><b>Bachelor of Science in Computer Science</b><span class="pull-right">In Progress</span><br>
 					Minor: Mathematics, Electrical Engineering<br>
 					Northern Arizona University, Flagstaff, AZ<br>
-					Current GPA: 3.43<br>
+					Current GPA: 3.22<br>
 					<br>
 					<b>Relevant topics studied:</b><br>
-					Calculus, Physics, Discrete Math, Data Structures, CS Graphics, CS Ethics, Web Programming.<br>
+					<span class="tab-right">Calculus, Physics, Discrete Math, Data Structures, CS Graphics, CS Ethics, Web Programming.</span><br>
+					<br>
+					<b>Languages and tools known:</b><br>
+					<span class="tab-right">HTML5, CSS3, Python, Git, Heroku, Flask, Javascript, Bootstrap, jQuery</span><br>
+					<span class="tab-right">C/C++, Java, Prolog, PHP, MySQL, State Machines, UML, Scheme, Rails</span><br>
+					<span class="tab-right" style="font-family: monospace">&nbsp &lt - Very familiar - - - - - - - - - Still learning - &gt</span>
 </p>
 	
 				</div>
@@ -251,6 +256,19 @@ jQuery(document).ready(function() {
 					<table>
 						<tr>
 							<td>
+								<a href="http://factualturtle.herokuapp.com/"><img src="images/factual.jpg" width="120px"></img></a>
+							</td>
+							<td>
+								<p class="cell">
+								I recently attended the 2014 <a href="http://www.lahacks.com/">LA Hacks</a> competition. My team's project was a Twitter bot <a href="http://factualturtle.herokuapp.com/">webapp</a> that sends you tweets about turtles in the style of <a href="https://twitter.com/RealCarrotFacts">@RealCarrotFacts</a> and <a href="https://twitter.com/ProBirdRights">@ProBirdRights</a>. It's purely a novelty program, but we are very proud of the outcome.
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<table style="margin-bottom: 0px">
+						<tr>
+							<td>
 								<a href="images/lego.jpg"><img src="images/lego.jpg" width="120px"></img></a>
 							</td>
 							<td>
@@ -299,7 +317,7 @@ jQuery(document).ready(function() {
 			<h1>References</h1>
 		</div>
 
-		<div class="box-content"> 
+		<div class="box-content-open"> 
 			
 				<table>
 					<tr>
@@ -329,6 +347,6 @@ jQuery(document).ready(function() {
 
 
 </div>
-
+<div style="height:100%"><br></div>
 </body>
 </html>

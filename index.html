@@ -6,197 +6,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>David's Resume</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="alternate stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/alternate.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 </head>
-
-<script type="text/javascript">
-jQuery(document).ready(function() {
-	//hide content box initially
- 	jQuery(".box-content").hide();
- 	//toggle the content box on click of title
-	jQuery(".box-title").click(function()
-	{
- 		jQuery(this).next(".box-content").slideToggle(200);
-	});
-});
-
-jQuery(document).ready(function() {
- 	//toggle the content box on click of title
-	jQuery(".box-title").click(function()
-	{
- 		jQuery(this).next(".box-content-open").slideToggle(200);
-	});
-});
-</script>
-
 <body role="document">
 	<div class="container">
-
+		<!-- ************* -->
 		<!-- NAVBAR HEADER -->
+		<!-- ************* -->
 		<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-      		<div class="container">
-        		<div class="navbar-header">
-          			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            			<span class="sr-only">Toggle navigation</span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-         			 </button>
-          			<a class="navbar-brand" href="#">Turtle Dynasty</a>
-        		</div>
-        		<div class="collapse navbar-collapse">
-          			<ul class="nav navbar-nav">
-            			<li class="active"><a href="#">R&eacutesum&eacute</a></li>
-            			<li><a href="#about">Projects</a></li>
-            			<li><a href="#about">Recreation</a></li>
-            			<li><a href="#contact">Contact</a></li>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="about.html">Turtle Dynasty</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+            			<li class="active"><a href="index.html"> Resume</a></li>
+            			<li><a href="projects.html"> Projects</a></li>
+            			<li><a href="recreation.html"> Recreation</a></li>
+            			<li><a href="contact.html"> Contact</a></li>
           			</ul>
-        		</div><!--/.nav-collapse -->
-      		</div>
-    	</div>
-        <!-- END NAVBAR HEADER -->
-
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		<!-- ********* -->
         <!-- JUMBOTRON -->
-      	<div class="jumbotron">
-        	<img style="float:left" src="images/me.png" class="img-thumbnail" alt="A picture of me.">
-        	<div style="margin-left: 45px; float:left;">
-        		<h1>David Miller</h1>
-        		<p>Computer Scientist, web developer, and pizza lover.</p> This website in under construction. Come back later! Or check out <a href="old.html">the old page.</a>
-        	</div>
+        <!-- ********* -->
+      	<div class="jumbotron" style="text-align: center">
+        	<h1>David Miller</h1>
+        	<p>Computer scientist & web developer.</p> This website in under construction. There's lots to see already, so feel free to look around.
         	<div style="clear:both"></div>
       	</div>
-      	<!-- END JUMBOTRON -->
-
+		<!-- ***************** -->
       	<!-- INNER BODY PANELS -->
+      	<!-- ***************** -->
       	<div class="row">
+      		<!-- *********** -->
       		<!-- LEFT COLUMN -->
+      		<!-- *********** -->
 			<div class="col-sm-6">
+				<!-- ********* -->
 				<!-- EDUCATION -->
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">Education</h3>
+				<!-- ********* -->
+				<div class="panel panel-custom">
+					<div class="panel-heading" data-toggle="collapse" data-target="#edu-child">
+						<h3 class="panel-title">
+							<a class="accordion-toggle">
+								<strong>Education</strong>
+							</a>
+						</h3>
 					</div>
-					<div class="panel-body">
-						<p>
-							<strong>Bachelor of Science in Computer Science</strong>
-							<span class="pull-right">In Progress</span><br>
-							Northern Arizona University, Flagstaff, AZ<br>
-							Current GPA: 3.22<br>
-							<br>
-							<strong>Relevant topics studied:</strong><br>
-							<span class="tab-right">Calculus, Physics, Discrete Math, Data Structures, Graphics, Ethics, Web Programming.</span><br>
-							<br>
-							<strong>Languages and tools known:</strong><br>
-							<span class="tab-right">HTML5, CSS3, Python, Git, Heroku, Flask, Javascript, Bootstrap, jQuery</span><br>
-							<span class="tab-right">C/C++, Java, Prolog, PHP, MySQL, State Machines, UML, Scheme, Rails</span><br>
-						</p>
+					<div id="edu-child" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<p>
+								<strong>Bachelor of Science in Computer Science</strong>
+								<span class="pull-right">In Progress</span><br>
+								Northern Arizona University, Flagstaff, AZ<br>
+								<br>
+								<strong>Relevant topics studied</strong><br>
+								CS Graphics, CS Ethics, Web Programming, <br>
+								Data Structures, Calculus, Physics, Discrete Math. 
+							</p>
+						</div>
+					</div> 
+				</div>
+
+				<!-- ****** -->
+				<!-- SKILLS -->
+				<!-- ****** -->
+				<div class="panel panel-custom">
+					<div class="panel-heading" data-toggle="collapse" data-target="#ski-child">
+						<h3 class="panel-title">
+							<a class="accordion-toggle">
+								<strong>Skills</strong>
+							</a>
+						</h3>
+					</div>
+					<div id="ski-child" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<p>
+								<strong>Web</strong><br>
+								Highly experienced with HTML5, CSS3, Bootstrap, Heroku.<br>
+								Familiar with Flask, Javascript, jQuery, PHP<br>
+							</p>
+							<p>
+								<strong>Other</strong><br>
+								Highly experienced with C/C++, Java, Python.<br>
+								Familiar with Git, bash, ssh, Prolog.<br>
+							</p>
+
+						</div>
 					</div>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Panel title</h3>
+				
+				<!-- *************** -->
+				<!-- WORK EXPERIENCE -->
+				<!-- *************** -->
+				<div class="panel panel-custom">
+					<div class="panel-heading" data-toggle="collapse" data-target="#work-child">
+						<h3 class="panel-title">
+							<a class="accordion-toggle">
+								<strong>Work Experience</strong>
+							</a>
+						</h3>
 					</div>
-					<div class="panel-body">
-						Panel content
+					<div id="work-child" class="panel-collapse collapse in">
+						<div class="panel-body">
+
+							<p>
+								<strong>Committee Chair</strong> <span class="pull-right">April 2014 - Present</span><br>
+								NAU Green Fund, Flagstaff, AZ<br>
+								<span class="tab-right">Overseeing the operations of the Green Fund</span><br>
+								<span class="tab-right">Guiding the members of the Green Fund Committee</span><br>
+								<span class="tab-right">Managing student leaders of approved projects</span><br>
+								<span class="tab-right">Leading Green Fund Meetings and participating in the meetings of the Environmental Caucus</span>
+							</p>
+
+							<p>
+								<strong>Committee Member</strong> <span class="pull-right">	May 2013 - April 2014</span><br>
+								NAU Green Fund, Flagstaff, AZ<br>
+								<span class="tab-right">Reduced environmental impact through sponsorship of student projects</span><br>
+								<span class="tab-right">Enhanced student leader 	participation through subcommittee guidance</span>
+							</p>
+	
+							<p>
+								<strong>Peer Math Assistant</strong> <span class="pull-right"> Spring 2013</span><br>
+								North Student Learning Centers, NAU, Flagstaff, AZ<br>
+								<span class="tab-right">Reinforced key concepts from 	lectures</span><br>
+								<span class="tab-right">Guided students in example 	exercises</span><br>
+								<span class="tab-right">Identified topics for focused study	</span>
+							</p>
+	
+							<p>
+								<strong>Science & Astronomy Instructor</strong> <span class	="pull-right">Summer 2013</span><br>
+								Girl Scouts of the USA, Camp Maripai, Payson, AZ<br>
+								<span class="tab-right">Prepared daily demonstrations and 	interactive projects</span><br>
+								<span class="tab-right">Initiated girl-led discussions 	about personal discoveries</span><br>
+								<span class="tab-right">Taught girls to recognize key 	summer constellations</span>
+							</p>
+	
+							<p>
+								<strong>Archery Instructor</strong> <span class="pull-right	">Summer 2012</span><br>
+								Girl Scouts of the USA, Camp Shadow Rim, Payson, AZ<br>
+								<span class="tab-right">Maintained a safe archery 	environment</span><br>
+								<span class="tab-right">Provided encouragement and 	technique coaching</span><br>
+								<span class="tab-right">Improvised creative diversions to 	improve behavior</span>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- ************ -->
 			<!-- RIGHT COLUMN -->
+			<!-- ************ -->
 			<div class="col-sm-6">
-				<!-- WORK EXPERIENCE -->
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">Work Experience</h3>
+				<!-- ******************** -->
+				<!-- VOLUNTEER EXPERIENCE -->
+				<!-- ******************** -->
+				<div class="panel panel-custom">
+					<div class="panel-heading" data-toggle="collapse" data-target="#vol-child">
+						<h3 class="panel-title">
+							<a class="accordion-toggle">
+								<strong>Volunteer Experience</strong>
+							</a>
+						</h3>
 					</div>
-					<div class="panel-body">
-						<p>
-							<strong>Committee Member,</strong> NAU Green Fund, Flagstaff, AZ
-							<span class="pull-right">Current</span><br>
-							<span class="tab-right">Reducing campus environmental impact through sponsorship of student projects.</span><br>
-							<span class="tab-right">Enhancing student participation through subcommittee guidance.</span><br>
-							<br>
+					<div id="vol-child" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<p>
+								<strong> President</strong>
+								<span class="pull-right"> Summer 2014 - present </span> <br>
+								NAU ACM Club, Flagstaff, AZ<br>
+								<span class="tab-right"> Managing club officers and organizing club workflow by delegation</span><br> 
+								<span class="tab-right"> Leading club events and officer meetings</span> <br> 
+								<span class="tab-right"> Coordinating with the club sponsor and the CS faculty of NAU </span> 
+							</p>
+							<p>
+								<strong> Service Project Leader</strong>
+								<span class="pull-right"> Fall 2013 - Spring 2014 </span> <br>
+								NAU ACM Club, Flagstaff, AZ<br>
+								<span class="tab-right"> Coordinating weekend service projects </span><br> 
+								<span class="tab-right"> Recording accomplishments of participants</span> <br> 
+								<span class="tab-right"> Implementing waste management and disposal plan </span> 
+							</p>
 
-							<strong>Peer Math Assistant,</strong> North Student Learning Centers, NAU, Flagstaff, AZ
-							<span class="pull-right">Spring 2013</span><br>
-							<span class="tab-right">Reinforced key concepts from lecture.</span><br>
-							<span class="tab-right">Guided students in example exercises.</span><br>
-							<span class="tab-right">Identified topics for focused study.</span><br>
-						</p>
+							<p>
+								<strong> Conference Volunteer</strong>
+								<span class="pull-right"> Spring 2013</span><br>
+								IAA Planetary Defense Conference<br>
+								<span class="tab-right"> Planned and executed check-in procedures </span><br> 
+								<span class="tab-right"> Assembled welcome packages</span><br> 
+								<span class="tab-right"> Greeted scientists from around the world</span><br> 
+								<span class="tab-right"> Attended conference lectures and engaged in public discussions</span><br> 
+							</p>
 
-						<p>
-							<strong>Science & Astronomy Instructor,</strong> Girl Scouts of the USA, Camp Maripai, Payson, AZ
-							<span class="pull-right">Summer 2013</span><br>
-							<span class="tab-right">Prepared daily demonstrations and interactive projects.</span><br>
-							<span class="tab-right">Initiated girl-led discussions about personal discoveries.</span><br>
-							<span class="tab-right">Taught girls to recognize key summer constellations.</span><br>
-							<br>
+							<p>
+								<strong> Software Co-author</strong>
+								<span class="pull-right"> April 2012 </span><br>
+								Institute of Electrical and Electronics Engineers Club, NAU, Flagstaff, AZ <br>
+								<span class="tab-right"> Engineered UI using Arduino technology based on provided specifications </span><br>
+								<span class="tab-right"> Attended team meetings for project design </span><br>  
+								<span class="tab-right"> Tested software for quality and stability </span>
+							</p>
 
-							<strong>Archery Instructor,</strong> Girl Scouts of the USA, Camp Shadow Rim, Payson, AZ
-							<span class="pull-right">Summer 2012</span><br>
-							<span class="tab-right">Maintained a safe archery environment.</span><br>
-							<span class="tab-right">Provided encouragement and technique coaching.</span><br>
-							<span class="tab-right">Improvised creative diversions to improve behavior.</span><br>
-					
-						</p>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Volunteer Experience</h3>
-					</div>
-					<div class="panel-body">
-						<p>
-							<strong> Service Project Leader, </strong>
-							NAU ACM Club, Flagstaff, AZ
-							<span class="pull-right"> Fall 2013-present </span> <br>
-							<span class="tab-right"> Coordinating weekend service projects. </span><br> 
-							<span class="tab-right"> Recording accomplishments of participants.</span> <br> 
-							<span class="tab-right"> Implementing waste management and disposal plan. </span> 
-						</p>
+							<p>
+								<strong>Eagle Scout Project Leader</strong>
+								<span class="pull-right">October 2009</span><br> 
+								Flagstaff Renewal Center <br>
+								<span class="tab-right"> Managed a team of 22 people in restoring exterior paint and landscaping</span><br>
+								<span class="tab-right"> Improved safety of existing winterized infrastructure</span><br>
+								<span class="tab-right"> Logged 150 person-hours of community service<br></span>
+							</p>
 
-						<p>
-							<strong> Conference Volunteer,</strong> 
-							IAA Planetary Defense Conference 
-							<span class="pull-right"> Spring 2013</span><br>
-							<span class="tab-right"> Planned and executed check-in procedures. </span><br> 
-							<span class="tab-right"> Assembled welcome packages.</span><br> 
-							<span class="tab-right"> Greeted scientific guests from around the world.</span><br> 
-							<span class="tab-right"> Attended conference lectures and engaged in public discussions.</span><br> 
-						</p>
-
-						<p>
-							<strong> Software Co-author,</strong> 
-							Institute of Electrical and Electronics Engineers Club, NAU, Flagstaff, AZ 
-							<span class="pull-right"> April 2012 </span><br>
-							<span class="tab-right"> Attended regular meetings for project design.</span><br> 
-							<span class="tab-right"> Engineered UI using Arduino technology based on provided specifications.</span><br> 
-							<span class="tab-right"> Tested software for quality and stability. </span>
-						</p>
-
-						<p>
-							<strong>Eagle Scout Project Leader,</strong> 
-							Flagstaff Renewal Center 
-							<span class="pull-right">October 2009</span><br>
-							<span class="tab-right"> Managed a team of 22 people in restoring exterior paint and landscaping.</span><br>
-							<span class="tab-right"> Over 150 person-hours were logged.<br></span>
-							<span class="tab-right"> Improved safety of existing winterized infrastructure.</span>
-						</p>
-
-						<p>
-							<strong>Service per graduation requirement,</strong> 
-							Notre Dame Preparatory High School, Scottsdale, AZ 
-							<span class="pull-right"> 2007-11 </span><br>
-							<span class="tab-right"> 200+ hours of community service logged</span>
-						</p>
+							<p>
+								<strong>Community Service</strong>
+								<span class="pull-right"> 2007 - 2011 </span><br>
+								<span class="tab-right"> Logged 200 hours of community service during high school</span>
+							</p>
+						</div>
 					</div>
 				</div>
-			</div><!-- /.col-sm-4 -->
+				<!-- ********** -->
+				<!-- REFERENCES -->
+				<!-- ********** -->
+				<div class="panel panel-custom">
+					<div class="panel-heading" data-toggle="collapse" data-target="#ref-child">
+						<h3 class="panel-title">
+							<a class="accordion-toggle">
+								<strong>References</strong>
+							</a>
+						</h3>
+					</div>
+					<div id="ref-child" class="panel-collapse collapse in">
+						<div class="panel-body">
 
+							<table class="table">
+								<tr>
+									<th> Contact </th>
+									<th>Relationship </th>
+								</tr>
+								<tr>
+									<td> Evin Deschamps <br>
+									Evin.Deschamps@nau.edu </td>
+									<td> Former Supervisor, <br>North Student Learning Centers </td>
+								</tr>
+								<tr>
+									<td> Maggie Vanderberg <br>
+									Maggie.Vanderberg@nau.edu </td>
+									<td> Professor<br> &nbsp </td>
+								</tr>
+								<tr>
+									<td> Ryan Middleton <br>
+									ryanmid@gmail.com </td>
+									<td> Former Professor <br> Mentor</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<!-- ********************* -->
       	<!-- END INNER BODY PANELS -->
-
-
+      	<!-- ********************* -->
 	</div>
 	<!-- Bootstrap core JavaScript
     ================================================== -->

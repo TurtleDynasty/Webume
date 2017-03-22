@@ -1,21 +1,29 @@
 /*post-bootstrap modifications*/
 
-.tab-right{
+/*    Colors
+      pale frost  (very pale blue)  #DBE3F0
+      mint green    (light green)   #29D08E
+      forest green  (dark green)    #106640
+      genoa blue    (dark blue)     #106070
+      rose          (dark pink)     #d04040
+*/
+
+.tab-right {
 	padding-left: 2em;
 	display: inline-block;
 }
 .panel-heading {
     cursor: pointer;
 }
-a, a:hover, a:focus{
+a, a:hover, a:focus {
   text-decoration: none;
 }
-a[href]{
-	color: #1690a7;
+a[href] {
+	color: #106070;
 }
 a[href]:hover,
 a[href]:focus {
-	color: #e96672;
+	color: #d04040;
     cursor: pointer;
     text-decoration: none;
 }
@@ -24,11 +32,11 @@ a[href]:focus {
   background-color: #DBE3F0;
 }
 .panel-custom {
-  border-color: #29D08E;
+  border-color: #106640;
 }
 .panel-custom > .panel-heading {
   color: #fff;
-  background-color: #29D08E;
+  background-color: #106640;
   border-color: #29D08E;
 }
 .panel-custom > .panel-heading + .panel-collapse .panel-body {
